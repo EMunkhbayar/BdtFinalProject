@@ -15,10 +15,10 @@ sudo service hbase-regionserver start
 - **Start Zookeeper**
   - `./bin/zookeeper-server-start.sh -daemon config/zookeeper.properties`
 
-- **Start Kafka server**:
+- **Start Kafka server**
   - `./bin/kafka-server-start.sh -daemon config/server.properties`
 
-- **Create topic**:
+- **Create topic**
   - `./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test-topic`
 
 
