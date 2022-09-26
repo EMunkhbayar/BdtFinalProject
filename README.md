@@ -15,6 +15,9 @@
 ### Run HBase:
 ```
 sudo service hbase-master start
+```
+
+```
 sudo service hbase-regionserver start
 ```
 
@@ -52,5 +55,7 @@ scan 'ds_salaries'
 ### Send new data to the topic:
 ```
 sed -i -e '$a4400,2020,MI,FT,Data Engineer,88000,GBP,512872,GB,50,GB,L'  ~/workspace/BdtFinalProject/input/ds_salaries.csv
+```
+```
 tail -n +2  ~/workspace/BdtFinalProject/input/ds_salaries.csv | bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test-topic
 ```
