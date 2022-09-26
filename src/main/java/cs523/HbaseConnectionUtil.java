@@ -66,7 +66,8 @@ public class HbaseConnectionUtil {
             HTable dsTable = new HTable(config, TABLE_NAME);
     		Put row = new Put(Bytes.toBytes(d.getId()));
     		
-    		row.add(Bytes.toBytes(CF_DEFAULT), Bytes.toBytes("workYear"),Bytes.toBytes(d.getWorkYear()));
+    		row.add(Bytes.toBytes(CF_DEFAULT), Bytes.toBytes("id"),Bytes.toBytes(d.getId()));
+    		row.add(Bytes.toBytes(CF_INFO), Bytes.toBytes("workYear"),Bytes.toBytes(d.getWorkYear()));
     		row.add(Bytes.toBytes(CF_INFO), Bytes.toBytes("experienceLevel"),Bytes.toBytes(d.getExperienceLevel()));
     		row.add(Bytes.toBytes(CF_INFO), Bytes.toBytes("jobTitle"),Bytes.toBytes(d.getJobTitle()));
     		row.add(Bytes.toBytes(CF_INFO), Bytes.toBytes("companySize"),Bytes.toBytes(d.getCompanySize()));
