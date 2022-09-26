@@ -1,7 +1,7 @@
 # BdtFinalProject
 **CS523** 
 
-> Gets **the top-rated jobs** in the Data Science domain from csv dataset into the ==Hbase== database using ==Kafka== and ==Spark Streaming==
+> Gets **the top-rated jobs** in the Data Science domain from csv dataset into the **Hbase** database using **Kafka** and **Spark Streaming**.
 
 ## Steps
 
