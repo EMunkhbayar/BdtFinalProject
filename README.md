@@ -3,6 +3,13 @@
 
 > Gets **the top-rated jobs** in the Data Science domain from csv dataset into the **Hbase** database using **Kafka** and **Spark Streaming**.
 
+- [x] Cloudera Quickstart VM 5.13.0
+- [x] Java 8
+- [x] Hadoop 2.6.0
+- [x] Spark 2.4.3
+- [x] HBase 1.2.0
+- [x] Kafka 0.10.2.2
+
 ## Steps
 
 ### Run HBase:
@@ -37,6 +44,8 @@ spark-submit --class cs523.App --master local target/BdtFinalProject-0.0.1-SNAPS
 ### See result in HBase:
 ```
 hbase shell
+```
+```
 scan 'ds_salaries'
 ```
 
