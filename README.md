@@ -23,13 +23,19 @@ sudo service hbase-regionserver start
 
 ### Run Kafka:
 - **Start Zookeeper**
-  - `./bin/zookeeper-server-start.sh -daemon config/zookeeper.properties`
+  - ```
+    ./bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
+    ```
 
 - **Start Kafka server**
-  - `./bin/kafka-server-start.sh -daemon config/server.properties`
+  - ```
+    ./bin/kafka-server-start.sh -daemon config/server.properties
+    ```
 
 - **Create topic**
-  - `./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test-topic`
+  - ```
+    ./bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test-topic
+    ```
 
 
 ### Produce message to topic:
